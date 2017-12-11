@@ -1,7 +1,8 @@
 package visitor_wiki;
 
 public abstract class DocumentPart {
-	public String text;
+	protected String text;
+	public abstract String toHTML();
 
 	public String getText() {
 		return text;

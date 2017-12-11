@@ -11,4 +11,10 @@ public class HyperLink extends DocumentPart {
 		this.url = url;
 	}
 
+	@Override
+	public String toHTML() {
+		// TODO Auto-generated method stub
+		return "<a href=\"" + this.url + "\">" + this.text + "</a>";
+	}
+
 }
