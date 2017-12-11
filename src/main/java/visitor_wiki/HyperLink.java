@@ -1,6 +1,11 @@
 package visitor_wiki;
 
 public class HyperLink extends DocumentPart {
+	public HyperLink(String text, String url) {
+		super(text);
+		this.url = url;
+	}
+
 	private String url;
 
 	public String getUrl() {

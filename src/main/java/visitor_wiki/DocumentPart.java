@@ -1,6 +1,11 @@
 package visitor_wiki;
 
 public abstract class DocumentPart {
+	public DocumentPart(String text) {
+		super();
+		this.text = text;
+	}
+
 	protected String text;
 	public abstract String toHTML();
 
