@@ -7,9 +7,7 @@ public abstract class DocumentPart {
 	}
 
 	protected String text;
-	public abstract String toHTML();
-	public abstract String ToPlainText();   
-	public abstract String ToLatex();
+	public abstract void accept(Visitor visitor);
 
 	public String getText() {
 		return text;
