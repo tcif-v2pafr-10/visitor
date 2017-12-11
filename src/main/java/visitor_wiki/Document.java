@@ -14,15 +14,33 @@ public class Document {
 		this.documentParts = documentParts;
 	}
 
-	public String toHTML() {     
-		String output = "<html><head></head><body>";     
+	public String toHTML() {
+		String output = "<html><head></head><body>";
 		for (DocumentPart documentPart : this.documentParts) {
 			output += documentPart.toHTML();
-			}
-		output += "</body></html>";
-		return output;   
 		}
-	
+		output += "</body></html>";
+		return output;
+	}
+
+	public String toPlainText() {
+		String output = "";
+		for (DocumentPart documentPart : this.documentParts) {
+			output += documentPart.ToPlainText();
+		}
+
+		return output;
+	}
+
+	public String toLatex() {
+		String output = "";
+		for (DocumentPart documentPart : this.documentParts) {
+			output += documentPart.ToLatex();
+		}
+
+		return output;
+	}
+
 	public void addDocumentPart(DocumentPart documentPart) {
 		documentParts.add(documentPart);
 	}

@@ -22,4 +22,14 @@ public class HyperLink extends DocumentPart {
 		return "<a href=\"" + this.url + "\">" + this.text + "</a>";
 	}
 
+	@Override
+	public String ToPlainText() {
+		return this.text + " [" + this.url + "]";
+	}
+
+	@Override
+	public String ToLatex() {
+		return "\\href{" + this.url + "}{" + this.text + "}";
+	}
+
 }

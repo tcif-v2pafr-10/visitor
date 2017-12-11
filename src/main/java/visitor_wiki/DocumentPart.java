@@ -8,6 +8,8 @@ public abstract class DocumentPart {
 
 	protected String text;
 	public abstract String toHTML();
+	public abstract String ToPlainText();   
+	public abstract String ToLatex();
 
 	public String getText() {
 		return text;

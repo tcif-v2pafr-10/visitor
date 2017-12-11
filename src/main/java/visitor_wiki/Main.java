@@ -10,6 +10,8 @@ public class Main {
 		document.addDocumentPart(new HyperLink("Berend Wilkens", "www.hu.nl"));
 		document.addDocumentPart(new PlainText("."));
 		System.out.println(document.toHTML());
+		System.out.println(document.toPlainText());
+		System.out.println(document.toLatex());
 	}
 
 }

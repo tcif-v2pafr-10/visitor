@@ -12,4 +12,14 @@ public class BoldText extends DocumentPart {
 		return "<b>" + this.text + "</b>";
 	}
 
+	@Override
+	public String ToPlainText() {
+		return "**" + this.text + "**";   
+	}
+
+	@Override
+	public String ToLatex() {
+		return "\\textbf{" + this.text + "}";
+	}
+
 }

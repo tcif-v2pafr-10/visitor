@@ -13,4 +13,14 @@ public class PlainText extends DocumentPart {
 		return this.text;
 	}
 
+	@Override
+	public String ToPlainText() {
+		return this.text;
+	}
+
+	@Override
+	public String ToLatex() {
+		return this.text;
+	}
+
 }
