@@ -7,6 +7,7 @@ public abstract class DocumentPart {
 	}
 
 	protected String text;
+	
 	public abstract void accept(Visitor visitor);
 
 	public String getText() {
@@ -16,6 +17,5 @@ public abstract class DocumentPart {
 	public void setText(String text) {
 		this.text = text;
 	}
-
 }
 
